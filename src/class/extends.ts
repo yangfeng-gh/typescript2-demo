@@ -1,10 +1,10 @@
-class Animal {
+class Animals {
     move(distanceInMeters: number = 0) {
         console.log(`Animal moved ${distanceInMeters}m.`);
     }
 }
 
-class Dog extends Animal {
+class Dog extends Animals {
     bark() {
         console.log('Woof! Woof!');
     }

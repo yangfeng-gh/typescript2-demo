@@ -1,4 +1,4 @@
-class Animal {
+class Animal2 {
     name: string;
     constructor(theName: string) { this.name = theName; }
     move(distanceInMeters: number = 0) {
@@ -6,7 +6,7 @@ class Animal {
     }
 }
 
-class Snake extends Animal {
+class Snake extends Animal2 {
     constructor(name: string) { super(name); }
     move(distanceInMeters = 5) {
         console.log("Slithering...");
@@ -14,7 +14,7 @@ class Snake extends Animal {
     }
 }
 
-class Horse extends Animal {
+class Horse extends Animal2 {
     constructor(name: string) { super(name); }
     move(distanceInMeters = 45) {
         console.log("Galloping...");
@@ -23,7 +23,7 @@ class Horse extends Animal {
 }
 
 let sam = new Snake("Sammy the Python");
-let tom: Animal = new Horse("Tommy the Palomino");
+let tom: Animal2 = new Horse("Tommy the Palomino");
 
 sam.move();
 tom.move(34);
