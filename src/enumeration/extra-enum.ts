@@ -8,6 +8,3 @@ declare enum Enum {
     B,
     C = 2
 }
-
-console.log(Enum.A);
-console.log(Enum.B);

@@ -20,7 +20,7 @@ class TextBox extends Control {
 }
 
 // 错误：“Image”类型缺少“state”属性。
-// class Image implements SelectableControl {
+// class.ts Image implements SelectableControl {
 //     select() { }
 // }
 
