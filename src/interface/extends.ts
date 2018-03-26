@@ -25,6 +25,6 @@ interface Square extends Shape, PenStroke {
 
 let square2 = <Square>{};
 square2.color = "blue";
-square2.sideLength = 10;
 square2.penWidth = 5.0;
+square2.sideLength = 10;
 console.log(square, square2);
