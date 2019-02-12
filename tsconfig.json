@@ -1,21 +1,22 @@
 {
   "files": [
-    "greet.ts",
     "main.ts"
   ],
   "include": [
     "src/**/*"
-  ],
+  ], // 读取所有可识别的src目录下的文件
   "exclude": [
     "node_modules",
     "**/*.spec.ts"
   ],
   "compilerOptions": {
+    "outDir": "./built", // 生成的所有文件放在built目录下
+    "allowJs": true, // 接受JavaScript做为输入
+    "target": "es5", // 将JavaScript代码降级到低版本比如ECMAScript 5
     "noImplicitAny": true,
     "strictNullChecks": false,
-    "target": "ES5",
     "experimentalDecorators": true
-//    "target": "es2015"
-//    "module": "es2015" // 即使我们使用了ES2015的模块语法，TypeScript还是会生成Node.js使用的CommonJS模块,通过修改 module选项来改变这个行为。
+    // "module": "es2015"
+    // 即使我们使用了ES2015的模块语法，TypeScript还是会生成Node.js使用的CommonJS模块,通过修改 module选项来改变这个行为。
   }
 }
