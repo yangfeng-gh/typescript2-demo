@@ -1,5 +1,5 @@
 class Control {
-    private state: any;
+    private state: any = 1;
     protected name: any = 'tom';
 }
 
@@ -20,8 +20,8 @@ class TextBox extends Control {
 }
 
 // 错误：“Image”类型缺少“state”属性。
-// class.ts Image implements SelectableControl {
-//     select() { }
+// class Image implements SelectableControl {
+//   select() { }
 // }
 
 let b = new Button();
@@ -29,3 +29,4 @@ b.select();
 
 let tb = new TextBox();
 tb.select();
+console.log(tb.state);

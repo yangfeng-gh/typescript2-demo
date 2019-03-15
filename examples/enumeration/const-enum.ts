@@ -17,3 +17,6 @@ const enum Directions {
 }
 
 let directions = [Directions.Up, Directions.Down, Directions.Left, Directions.Right];
+// 生成后的代码为：
+// var directions = [0 /* Up */, 1 /* Down */, 2 /* Left */, 3 /* Right */];
+console.log(directions)

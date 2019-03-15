@@ -19,9 +19,9 @@ interface Loggable {
 }
 class ConsoleLogger implements Loggable {
     log() {
-        // ...
+      console.log('this is a log')
     }
 }
 var jim = extend(new Person("Jim"), new ConsoleLogger());
-var n = jim.name;
 jim.log();
+console.log(jim.name);

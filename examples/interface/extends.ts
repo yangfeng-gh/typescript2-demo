@@ -7,8 +7,8 @@ interface Square extends Shape {
 }
 
 let square = <Square>{};
-square.color = "blue";
-square.sideLength = 10;
+square.color = "red";
+square.sideLength = 1;
 
 //
 interface Shape {

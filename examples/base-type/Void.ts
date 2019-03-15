@@ -1,3 +1,4 @@
+// void通常用于没有返回值的函数
 function warnUser(): void {
     alert("This is my warning message");
 }

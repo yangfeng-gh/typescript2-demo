@@ -5,7 +5,9 @@ interface Counter {
 }
 
 function getCounter(): Counter {
-    let counter = <Counter>function (start: number) { };
+    let counter = <Counter>function (start: number) {
+      console.log(start)
+    };
     counter.interval = 123;
     counter.reset = function () {
         console.log('reset');

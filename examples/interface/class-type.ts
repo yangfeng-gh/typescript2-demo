@@ -25,7 +25,7 @@ interface ClockInterface {
     tick(): void;
 }
 
-function createClock(ctor: ClockConstructor, hour: number, minute: number): ClockInterface {
+function createClock(ctor: ClockConstructor, hour?: number, minute?: number): ClockInterface {
     return new ctor(hour, minute);
 }
 

@@ -16,6 +16,6 @@ console.log(Color3[c3])
 
 // 枚举类型提供的一个便利是你可以由枚举的值得到它的名字。
 enum Color4 {Red = 1, Green, Blue}
-let colorName: string = Color4[2];
+let colorName: string = Color4[3];
 
 console.log(colorName);  // 显示'Green'因为上面代码里它的值是2

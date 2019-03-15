@@ -13,4 +13,7 @@ function padLeft(value: string, padding: string | number) {
     throw new Error(`Expected string or number, got '${padding}'.`);
 }
 
-// let indentedString = padLeft("Hello world", true); // errors during compilation
+let indentedString = padLeft("Hello world", 2);
+console.log(indentedString) //  Hello world
+
+// indentedString = padLeft("Hello world", true); // errors during compilation
