@@ -1,6 +1,4 @@
 var gulp = require('gulp');
-// var ts = require('gulp-typescript');
-// var tsProject = ts.createProject('tsconfig.json');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var tsify = require('tsify');
@@ -60,14 +58,5 @@ gulp.task('default', ['copy-html'], function () {
         .bundle()
         .pipe(source('bundle.js')) // 调用bundle后，我们使用source（vinyl-source-stream的别名）把输出文件命名为bundle.js
         .pipe(gulp.dest('dist'))
-});
-*/
-
-/*
-// 使用gulp-typescript把ts编译为js
-gulp.task("default", function () {
-    return tsProject.src()
-        .pipe(tsProject())
-        .js.pipe(gulp.dest("dist"));
 });
 */
